@@ -139,7 +139,7 @@ spec:
               Review and merge the pull request to promote: ${{ outputs['open-pr'].pr.url }}
             smtp:
               to:
-                - replace@with_an_email.address
+                - mcarman@gmail.com
               subject: "[Kargo] Staging approval needed: guestbook ${{ imageFrom(vars.image).Tag }}"
         - uses: git-wait-for-pr
           as: wait-for-pr
